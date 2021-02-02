@@ -11,7 +11,7 @@ const LOW_PREM = 0;
 const OOP_MAX = 1;
 const CHOICE = 2;
 function App() {
-  const [recommendation, setRecommendation] = useState("nothing selected");
+  const [recommendation, setRecommendation] = useState("");
 
   const reportSettings = (settingsArray)=>{
 
@@ -30,9 +30,9 @@ function App() {
       setRecommendation("PPO")
 
     }
-
-    // }
-
+    else {
+      setRecommendation('');
+    }
   }
 
   return (
